@@ -5,57 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andres Jimenez/Who I am!</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
    <link rel="stylesheet" href="assets/css/style.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link href="https://fonts.googleapis.com/css?family=Oswald|Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
-<body class="indigo lighten-4">
-        <div class="row">
-                <ul id="slide-out" class="sidenav">
-                  <li><div class="user-view">
-                    <div class="background">
-                      <img src="./assets/img/bg.jpeg">
-                    </div>
-                    <a href="#user"><img class="circle" src=""></a>
-                    <a href="#name"><span class="white-text">Andres Jimenez</span></a>
-                    <a href="#email"><span class="white-text">AndresDudex@gmail.com</span></a>
-                  </div></li>
-                  <li><a href="#!">contact</a></li>
-                  <li><a href="#!">Projects</a></li>
-                </ul>
-                <a href="#" data-target="slide-out" class="waves-effect waves-light btn-large sidenav-trigger"><i class="material-icons">MORE!</i></a>
-                      
-    <div class="container">
+<body>
+    <div class="navbar-fixed">
+    <nav>
+        <div id="name" class="nav-wrapper">
+          <a href="#" class="brand-logo center">
+            Andres Jimenez </a>
+            <img class="circle brand-logo center" id="headShot">
+        </div>
+      </nav>
+    </div>
             <div class="col s12 m8 l9"> 
-                <div class="row"> 
-                    <div class="col s12 center-align white-text">
-                        <h2 id="header">Welcome To My Page</h2>
-                    </div>
-                    <h3 class="col left-align">
+                  <div class="parallax-container">
+                      <div class="parallax"><img src="./assets/img/berkeley-skyline.jpg"></div>
+                    </div>                
+                <div class="row">
+                <div class="container">
+                    <div class="col m8">
+                    <h3 id="title">
                         My Expirence
                     </h3>
-                    <div class="col">
                         <p class="bio">
-                            Hello, My name is Andres Jimenez. I live near San Francisco,CA and Im up an comming FullSatck Web developer; Ive studied with Udacity and The Uc Berkeley Extension Programme.
+                            Hello, My name is Andres Jimenez. I live near San Francisco,CA and Im up an comming FullSatck Web developer; Ive studied with Udacity and The UC Berkeley Extension Programme.
                             It was a hard and rewarding journey I really enjoy programming it self. Programming to me is like building a puzzel using many pieces; At first it was hard to understand but with time it all kind of clicks
-                            together. With Udacity I took on nano-degree program which teach students the basics of programming of HMTL, CSS, python and javascript. My expirince with the Udacity programe was a bit harsh but I learn a lot; I graduated from this programe
+                            together. With Udacity I took on nano-degree program which teach students the basics of programming of HMTL, CSS, python and javascript. My expirince with the Udacity programe was a bit harsh but I learn a lot; I finnished this programe
                             on Jun 13,2019. I joined the UC Berkeley Extension programe on Nov 18,2019; were we focused on FullStack web development; it was a very hard but enjoyable expirince . I learned how to work with others in programming and how to learn new technologies and new langauges.    
                         </p>
-                        </div>
-                        <div class="col">
-                            <a href="https://extension.berkeley.edu/">
-                            <img src="./assets/img/UcBerkeleyExt.png" alt="Uc Berkeley extension logo"></div>
-                            </a>
-                            <a href="https://www.udacity.com/">
-                            <img  id="udacityLogo"src="./assets/img/UdacityLogo.png" alt="Udacity Logo">
-                            </div>
-                </div>
-              </div>
-        
-            </div>
+                      </div>
 
-      </div>
+                  <div id="image-holder"class="col m4">
+                          <div>
+                            <a href="https://extension.berkeley.edu/" target="_blank">
+                            <img class="card-panel hoverable" src="./assets/img/UcBerkeleyExt.png" alt="Uc Berkeley extension logo">
+                          </a>
+                          </div>
+                          <div>
+                            <a href="https://www.udacity.com/" target="_blank">
+                            <img class="card-panel hoverable" id="udacityLogo"src="./assets/img/UdacityLogo.png" alt="Udacity Logo">
+                            </a>
+                          </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="parallax-container">
+                  <div class="parallax"><img src="./assets/img/working.gif"></div>
+                </div>
+            <div class="container">
+              <h3 id="title"> Projects:</h3>
+            <div class="projectBoxes">
+              </div>
+            </div>
+            <div class="parallax-container">
+                <div class="parallax"><img src="./assets/img/working.gif"></div>
+              </div>
+            
+            </div>
        <!-- Compiled and minified JavaScript -->
        <script src="./assets/js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

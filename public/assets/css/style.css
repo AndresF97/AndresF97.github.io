@@ -1,11 +1,41 @@
 #header{
     margin-top: 0%
 }
+#title{
+    font-family: "Oswald"
+}
 .bio{
     line-height: 30px;
     font-size: 20px;
 }
+#headShot{
+    margin-left:175px;
+    margin-top:2px;
+    width: 80px;
+    height:80px;
+    /* box-shadow: 0 0 7px 0 black; */
+    border: 2px solid #524941;
+}
+.parallax-container{
+    margin:20px;
+}
+#name{
+    font-family:'Playfair Display SC';
+}
 #udacityLogo{
-    height: 110px;
-    width: 40%;
+    height: 180px;
+    width: 260px;
+    margin-left:0px;
+}
+#image-holder{
+    margin-top:100px;
+}
+.descript{
+    margin-top:50px;
+}
+nav{
+    background-color: #524941
+}
+img{
+    width: 300px
 }
