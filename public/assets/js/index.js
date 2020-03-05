@@ -30,7 +30,7 @@ $.get("https://api.github.com/repos/AndresF97/The_WatchList")
   //coltTwo.attr("id","descript")
 
   colTwo.html(`<h5>Description:</h5>
-  <p> ${res.description}</p>`)
+  <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
@@ -62,8 +62,8 @@ $.get("https://api.github.com/repos/AndresF97/Random-Password-Generator")
   colTwo.addClass("col m5 descript")
   //coltTwo.attr("id","descript")
   colTwo.html(`<h5>Description:</h5>
-  <p> ${res.description}; If youll like to see the code please click on the gif provided</p>
-  <p> here's a demo:<a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
+  <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
+  <p> here's a demo: <a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
@@ -92,8 +92,8 @@ $.get("https://api.github.com/repos/AndresF97/google-book-search")
   colTwo.addClass("col m5 descript")
   //coltTwo.attr("id","descript")
   colTwo.html(`<h5>Description:</h5>
-  <p> ${res.description}; If youll like to see the code please click on the gif provided</p>
-  <p> here's a demo:<a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
+  <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
+  <p> here's a demo: <a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
@@ -123,8 +123,8 @@ $.get("https://api.github.com/repos/AndresF97/monopoly_tracker")
   //coltTwo.attr("id","descript")
 
   colTwo.html(`<h5>Description:</h5>
-  <p> ${res.description}</p>
-  <p> here's a demo:<a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
+  <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
+  <p> here's a demo: <a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
