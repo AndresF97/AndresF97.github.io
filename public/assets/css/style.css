@@ -30,6 +30,10 @@
 #image-holder{
     margin-top:100px;
 }
+.size{
+    height:250px;
+    width:400px;
+}
 .descript{
     margin-top:50px;
 }
