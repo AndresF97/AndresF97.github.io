@@ -57,3 +57,10 @@ nav{
 img{
     width: 300px
 }
+.carousel{
+    height: 200px;
+}
+#carousel-item{
+    height: 200px;
+    width:400px;
+}
