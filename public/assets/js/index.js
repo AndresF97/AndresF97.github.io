@@ -30,7 +30,8 @@ $.get("https://api.github.com/repos/AndresF97/The_WatchList")
   //coltTwo.attr("id","descript")
 
   colTwo.html(`<h5>Description:</h5>
-  <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>`)
+  <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
+  <p> here's the github link:<a href =${res.html_url} target="_blank"> Click me!</a></p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
@@ -52,7 +53,7 @@ $.get("https://api.github.com/repos/AndresF97/Random-Password-Generator")
   const Image =$("<img>")
   const link = $("<a>")
   link.attr("target","_blank")
-  link.attr("href",`${res.html_url}`)
+  link.attr("href",`${res.homepage}`)
   Image.addClass("card-panel hoverable size")
   Image.attr("src","./assets/img/password.gif")
   link.append(Image)
@@ -63,7 +64,7 @@ $.get("https://api.github.com/repos/AndresF97/Random-Password-Generator")
   //coltTwo.attr("id","descript")
   colTwo.html(`<h5>Description:</h5>
   <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
-  <p> here's a demo: <a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
+  <p> here's the github link:<a href =${res.html_url} target="_blank"> Click me!</a></p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
@@ -82,7 +83,7 @@ $.get("https://api.github.com/repos/AndresF97/google-book-search")
   const Image =$("<img>")
   const link = $("<a>")
   link.attr("target","_blank")
-  link.attr("href",`${res.html_url}`)
+  link.attr("href",`${res.homepage}`)
   Image.addClass("card-panel hoverable size")
   Image.attr("src","./assets/img/google.gif")
   link.append(Image)
@@ -93,7 +94,7 @@ $.get("https://api.github.com/repos/AndresF97/google-book-search")
   //coltTwo.attr("id","descript")
   colTwo.html(`<h5>Description:</h5>
   <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
-  <p> here's a demo: <a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
+  <p> here's the github link:<a href =${res.html_url} target="_blank"> Click me!</a></p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
@@ -113,7 +114,7 @@ $.get("https://api.github.com/repos/AndresF97/monopoly_tracker")
   const link = $("<a>")
   Image.addClass("card-panel hoverable size")
   link.attr("target","_blank")
-  link.attr("href",`${res.html_url}`)
+  link.attr("href",`${res.homepage}`)
   Image.attr("src","./assets/img/MonopolyTracker.gif")
   link.append(Image)
   colOne.append(link)
@@ -124,7 +125,7 @@ $.get("https://api.github.com/repos/AndresF97/monopoly_tracker")
 
   colTwo.html(`<h5>Description:</h5>
   <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
-  <p> here's a demo: <a href="${res.homepage}" target="_blank">Website Demo</a></p>`)
+  <p> here's the github link:<a href =${res.html_url} target="_blank"> Click me!</a></p>`)
   //appending information to the row 
   rowOne.append(colOne)
   rowOne.append(colTwo)
