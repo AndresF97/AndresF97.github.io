@@ -16,7 +16,8 @@ a:hover{
     margin-top: 0%
 }
 #title{
-    font-family: "Oswald"
+    font-family: "Oswald";
+    text-align: center
 }
 .bio{
     line-height: 30px;
@@ -40,6 +41,31 @@ a:hover{
     height: 180px;
     width: 260px;
     margin-left:0px;
+}
+#htmlLogo{
+    height:150px;
+    width:150px
+}
+#cssLogo{
+    height: 150px;
+    width: 120px
+}
+#javascriptLogo{
+    height: 150px;
+    width: 150px
+}
+#jqueryLogo{
+    height:120px;
+    width:120px;
+    margin-left:5px
+}
+#nodejsLogo{
+    height: 120px;
+    width: 100px
+}
+#reactLogo{
+    height: 100px;
+    width: 100px;
 }
 #image-holder{
     margin-top:100px;
