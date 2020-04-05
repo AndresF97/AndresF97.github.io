@@ -106,8 +106,10 @@ img{
         width:899px
       }
       .descript{
-        padding-left:100px;
-        padding-right:0px;
+        padding-left:100px
+        !important;
+        padding-right:0px
+        !important;
     }
 }
 @media screen and (max-width: 1024px) {
