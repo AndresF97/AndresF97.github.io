@@ -90,7 +90,7 @@ $.get("https://api.github.com/repos/AndresF97/google-book-search")
   colOne.append(link)
   //this col will get the description from the API 
   const colTwo  = $("<div>")
-  colTwo.addClass("col m5 descript")
+  colTwo.addClass("col m5 s12 descript")
   //coltTwo.attr("id","descript")
   colTwo.html(`<h5>Description:</h5>
   <p> ${res.description}; If youll like to see the code please click on the gif provided.</p>
