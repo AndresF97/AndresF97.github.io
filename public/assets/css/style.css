@@ -119,5 +119,9 @@ img{
         padding-right:0px
         !important;
     }
+    div.parallax-container{
+        width: 1090px
+        !important;
+    }
 
 }
