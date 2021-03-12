@@ -8,6 +8,9 @@ body{
 .parallax-container{
     border: 8px solid #524941;
 }
+.parallax{
+    opacity: 0.5;
+}
 a{
     color:#c2a876
 }
@@ -39,8 +42,8 @@ a:hover{
     font-family:'Playfair Display SC';
 }
 #udacityLogo{
-    height: 180px;
-    width: 260px;
+    height: 120px;
+    width: 200px;
     margin-left:0px;
 }
 #htmlLogo{
