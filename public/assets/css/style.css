@@ -3,7 +3,7 @@ html{
 }
 body{
     background-color: #95968f;
-    color:white
+    color:white;
 }
 .parallax-container{
     border: 8px solid #524941;
@@ -102,9 +102,20 @@ img{
     height: 200px;
     width:400px;
 }
+@media screen and (max-width: 510px) {
+    html{
+      width:800px
+    }
+    .row{
+        margin-left: 150px;
+    }
+  }
 @media screen and (max-width: 411px) {
     html{
       width:800px
+    }
+    .row{
+        margin-left: 20px;
     }
   }
 @media screen and (max-width: 414px) {
@@ -123,6 +134,24 @@ img{
         !important;
     }
 }
+@media screen and (max-width: 900px) {
+    div.parallax-container{
+        width: 1100px
+        !important;
+    }
+    html{
+        width:899px
+      }
+      .descript{
+        padding-left:100px
+        !important;
+        padding-right:0px
+        !important;
+    }
+    body{
+        width: 1100px;
+    }
+}
 @media screen and (max-width: 1024px) {
     .descript{
         padding-left:100px
@@ -131,8 +160,7 @@ img{
         !important;
     }
     div.parallax-container{
-        width: 1090px
-        !important;
+        width: 1090px;
     }
 
 }
