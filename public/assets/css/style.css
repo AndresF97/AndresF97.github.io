@@ -29,6 +29,28 @@ a:hover{
     line-height: 30px;
     font-size: 20px;
 }
+.icon{
+    font-size: 50px
+    !important;
+    margin-left: 2px;
+}
+.icon-text{
+    font-size: 30px
+    !important;
+    width: 100px;
+    height: 85px;
+    font-family: "Oswald"
+}
+.icon-text:hover{
+    color:white;
+    text-decoration:underline;
+}
+.icon-box{
+    margin-top: 20px auto;
+}
+#middle{
+    margin-left:250px
+}
 #headShot{
     margin-left:175px;
     margin-top:2px;
@@ -95,21 +117,20 @@ nav{
 img{
     width: 450px
 }
-.carousel{
-    height: 200px;
+.page-footer{
+    background-color: #524941;
 }
-#carousel-item{
-    height: 200px;
-    width:400px;
-}
+
 @media screen and (max-width: 320px) {
     html{
-      width:800px
-    }
-    .row{
-        margin-left: 150px;
+      width:400px
     }
   }
+@media screen and (max-width: 360px) {
+    #middle{
+        margin-left:250px
+    }  
+}
 @media screen and (max-width: 510px) {
     html{
       width:800px
@@ -179,4 +200,15 @@ img{
         width: 1400px;
     }
 
+}
+@media screen and (max-width: 2724.16px) {
+    .descript{
+        padding-left:100px
+        !important;
+        padding-right:0px
+        !important;
+    }
+    .container{
+        width: 1000px;
+    }
 }
