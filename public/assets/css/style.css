@@ -124,7 +124,7 @@ img{
 
 @media screen and (max-width: 320px) {
     html{
-      width:400px
+      width:100%
     }
   }
 @media screen and (max-width: 360px) {
@@ -145,7 +145,7 @@ img{
   }
 @media screen and (max-width: 411px) {
     html{
-      width:800px
+      width:100%
     }
     .row{
         margin-left: 20px;
@@ -187,10 +187,24 @@ img{
         width: 1100px;
     }
 }
+@media screen and (max-width: 987px) {
+    div.parallax-container{
+        width: 100%;
+    }
+    html{
+        width:100%
+      }
+      .descript{
+        padding-left:100px
+        !important;
+        padding-right:0px
+        !important;
+    }
+    body{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 1022px) {
-    /* #middle{
-        margin-left:250px
-    }   */
     .parallax-container{
         max-width: 1025px;
     }
@@ -209,12 +223,33 @@ img{
         !important;
     }
     div.parallax-container{
-        width: 1400px;
+        width: 1024px;
+    }
+    .container{
+        max-width: 1024px;
     }
     body{
-        width: 1400px;
+        width: 1024px;
     }
 
+}
+@media screen and (max-width: 1023px) {
+    .descript{
+        padding-left:100px
+        !important;
+        padding-right:0px
+        !important;
+    }
+
+    div.parallax-container{
+        width: 100%;
+    }
+    .container{
+        max-width: 100%;
+    }
+    body{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 2724.16px) {
     .descript{
@@ -223,7 +258,7 @@ img{
         padding-right:0px
         !important;
     }
-    .container{
-        width: auto;
-    }
+    /* .container{
+        width: 100%;
+    } */
 }
