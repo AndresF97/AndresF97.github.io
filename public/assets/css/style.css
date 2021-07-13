@@ -129,6 +129,7 @@ img{
     html{
       width:100%
     }
+
   }
 @media screen and (max-width: 360px) {
     #middle{
@@ -162,6 +163,40 @@ img{
 @media screen and (max-width: 510px) {
     div.row.skills{
         margin-left: 0;
+    }
+
+}
+@media screen and (max-width: 610px) {
+    #htmlLogo{
+        height:100px
+        !important;
+        width:100px
+        !important;
+    }
+    #cssLogo{
+        height: 100px
+        !important;
+        width: 70px
+        !important;
+        margin-left: 20px;
+    }
+    #javascriptLogo{
+        height: 100px;
+        width: 100px
+    }
+    #jqueryLogo{
+        height:60px;
+        width:90px;
+        margin-left:5px
+    }
+    #nodejsLogo{
+        height: 120px;
+        width:90px;
+        margin-left:10px;
+    }
+    #reactLogo{
+        height: 100px;
+        width: 100px;
     }
 
 }
