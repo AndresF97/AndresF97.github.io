@@ -295,6 +295,40 @@ img{
         width: 100%;
     }
 }
+@media screen and (max-width: 1188px) {
+    #htmlLogo{
+        height:100px
+        !important;
+        width:100px
+        !important;
+    }
+    #cssLogo{
+        height: 100px
+        !important;
+        width: 70px
+        !important;
+        margin-left: 20px;
+    }
+    #javascriptLogo{
+        height: 100px;
+        width: 100px
+    }
+    #jqueryLogo{
+        height:60px;
+        width:90px;
+        margin-left:5px
+    }
+    #nodejsLogo{
+        height: 120px;
+        width:90px;
+        margin-left:10px;
+    }
+    #reactLogo{
+        height: 100px;
+        width: 100px;
+    }
+
+}
 @media screen and (max-width: 2724.16px) {
     .descript{
         padding-left:100px
@@ -302,7 +336,4 @@ img{
         padding-right:0px
         !important;
     }
-    /* .container{
-        width: 100%;
-    } */
 }
