@@ -164,6 +164,15 @@ img{
     div.row.skills{
         margin-left: 0;
     }
+    p.projectExample{
+        width: 200px;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .frame{
+        width: 250px !important;
+    }
 
 }
 @media screen and (max-width: 610px) {
@@ -198,15 +207,8 @@ img{
         height: 100px;
         width: 100px;
     }
-    div p{
-        width: 250px;
-    }
-
 }
 @media screen and (max-width: 674px) {
-    div p{
-        width: 250px;
-    }
     div.col.special{
         width:10px
         !important;
@@ -219,7 +221,7 @@ img{
 }
 @media screen and (max-width: 768px) {
     .frame{
-        width: 300px;
+        width: 200px;
     }
     div.parallax-container{
         width: 100%;
@@ -236,6 +238,9 @@ img{
     #berkeleyLogo{
         width: 300px
         !important;
+    }
+    img.frame{
+        width:200px;
     }
     
 }
@@ -268,7 +273,7 @@ img{
     }
 }
 @media screen and (max-width: 987px) {
-    .frame{
+    img.frame{
         width: 300px;
     }
     div.parallax-container{
@@ -290,6 +295,9 @@ img{
         width:640px
         !important;
     }
+    img.frame{
+        width:400px;
+    }
 }
 @media screen and (max-width: 1022px) {
     .parallax-container{
@@ -301,6 +309,9 @@ img{
     body{
         max-width: 1025px;
     }
+    /* img.frame{
+        width:400px;
+    } */
 }
 @media screen and (max-width: 1024px) {
     .descript{
@@ -317,6 +328,9 @@ img{
     }
     body{
         width: 1024px;
+    }
+    img.frame{
+        width:400px;
     }
 
 }
@@ -370,7 +384,9 @@ img{
         height: 100px;
         width: 100px;
     }
-
+    img.frame{
+        width:300px;
+    }
 }
 @media screen and (max-width: 2724.16px) {
     .descript{
