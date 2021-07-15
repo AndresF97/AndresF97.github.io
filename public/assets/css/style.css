@@ -53,7 +53,11 @@ div.col.special{
     width: 800px !important;
 }
 #middle{
-    margin-left:250px
+    text-align: center;
+    justify-content: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #headShot{
     margin-left:175px;
@@ -218,6 +222,13 @@ img{
         !important;
         height: 100px;
     }
+    .parallax-container{
+        height: 600px
+        !important;
+    }
+    div.parallax img{
+        height: 600px;
+    }
 }
 @media screen and (max-width: 768px) {
     .frame{
@@ -236,11 +247,18 @@ img{
         !important;
     }
     #berkeleyLogo{
-        width: 300px
-        !important;
+        width: 300px;
     }
     img.frame{
         width:200px;
+    }
+    .parallax-container{
+        height: 720px
+        !important;
+    }
+    div.parallax img{
+        height: 720px
+        !important;
     }
     
 }
@@ -269,7 +287,11 @@ img{
         !important;
     }
     #berkeleyLogo{
-        width: 300px;
+        width: 200px;
+    }
+    img#udacityLogo{
+        width: 120px;
+        height: 120px;
     }
 }
 @media screen and (max-width: 987px) {
@@ -302,6 +324,7 @@ img{
 @media screen and (max-width: 1022px) {
     .parallax-container{
         max-width: 1025px;
+        height: 600px;
     }
     .container{
         max-width: 1025px;
@@ -309,9 +332,9 @@ img{
     body{
         max-width: 1025px;
     }
-    /* img.frame{
-        width:400px;
-    } */
+    div.parallax img{
+        height: 600px;
+    }
 }
 @media screen and (max-width: 1024px) {
     .descript{
