@@ -134,15 +134,15 @@ img{
 @media screen and (max-width: 360px) {
     #middle{
         margin-left:250px
-    }  
+    } 
 }
 @media screen and (max-width: 510px) {
     html{
-      width:800px
+      width:100%
     }
-    .row{
+    /* .row{
         margin-left: 150px;
-    }
+    } */
     div.parallax-container{
         width: 1000px;
     }
@@ -157,7 +157,7 @@ img{
   }
 @media screen and (max-width: 414px) {
     html{
-        width:800px
+        width:100%
       }
 }
 @media screen and (max-width: 510px) {
@@ -198,11 +198,31 @@ img{
         height: 100px;
         width: 100px;
     }
+    div p{
+        width: 250px;
+    }
 
 }
+@media screen and (max-width: 674px) {
+    div p{
+        width: 250px;
+    }
+    div.col.special{
+        width:10px
+        !important;
+    }    
+    #berkeleyLogo{
+        width: 200px
+        !important;
+        height: 100px;
+    }
+}
 @media screen and (max-width: 768px) {
+    .frame{
+        width: 300px;
+    }
     div.parallax-container{
-        width: 1300px;
+        width: 100%;
     }
     html{
         width:899px
@@ -213,10 +233,19 @@ img{
         padding-right:0px
         !important;
     }
+    #berkeleyLogo{
+        width: 300px
+        !important;
+    }
+    
 }
+
 @media screen and (max-width: 900px) {
     div.parallax-container{
         width: 1100px;
+    }
+    .frame{
+        width: 300px;
     }
     html{
         width:899px
@@ -230,8 +259,18 @@ img{
     body{
         width: 1100px;
     }
+    div.col.special{
+        width:60px
+        !important;
+    }
+    #berkeleyLogo{
+        width: 300px;
+    }
 }
 @media screen and (max-width: 987px) {
+    .frame{
+        width: 300px;
+    }
     div.parallax-container{
         width: 100%;
     }
@@ -246,6 +285,10 @@ img{
     }
     body{
         width: 100%;
+    }
+    div.col.special{
+        width:640px
+        !important;
     }
 }
 @media screen and (max-width: 1022px) {
