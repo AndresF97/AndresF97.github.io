@@ -1,9 +1,10 @@
 html{
-    width:auto;
+    width: 100% !important;
 }
 body{
     background-color: #95968f;
     color:white;
+    width: 100% !important;
 }
 .parallax-container{
     border: 8px solid #524941;
@@ -133,12 +134,26 @@ img{
     html{
       width:100%
     }
+    nav .brand-log{
+        font-size: 14px !important;
+        background-color: red;
+    }
+
+  }
+@media screen and (max-width: 393px) {
+    html{
+      width:100%
+    }
+    nav .brand-log{
+        font-size: 14px !important;
+    }
 
   }
 @media screen and (max-width: 360px) {
     #middle{
         margin-left:250px
-    } 
+    }
+
 }
 @media screen and (max-width: 510px) {
     html{
@@ -147,8 +162,8 @@ img{
     /* .row{
         margin-left: 150px;
     } */
-    div.parallax-container{
-        width: 1000px;
+    div .parallax-container{
+        width: 100%;
     }
   }
 @media screen and (max-width: 411px) {
@@ -158,11 +173,17 @@ img{
     .row{
         margin-left: 20px;
     }
+    body{
+        width:100%
+    }
   }
 @media screen and (max-width: 414px) {
     html{
         width:100%
       }
+      div .parallax-container{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 510px) {
     div.row.skills{
@@ -170,6 +191,9 @@ img{
     }
     p.projectExample{
         width: 200px;
+    }
+    div .parallax-container{
+        width: 100%;
     }
 
 }
