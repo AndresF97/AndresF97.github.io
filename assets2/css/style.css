@@ -209,3 +209,96 @@ nav{
 .show-menu{
     bottom: 0;
 }
+
+.home-continer{
+    gap: 1rem;
+}
+
+.home-content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home-socials{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+
+.home-social-icon{
+    font-size: 1.25rem;
+    color:var(--first-color);
+}
+
+.home-social-icon:hover{
+    color:var(--first-color-alt)
+}
+
+.home-svg{
+    width: 200px;
+    fill: var(--first-color);
+}
+
+.home-svg-img{
+    width: 10px;
+    height: 10px;
+}
+
+.home-data{
+    grid-column: 1/3;
+}
+
+.home-title{
+    font-size: var(--big-font-size);
+}
+
+.home-subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+}
+
+.home-description{
+    margin-bottom: var(--mb-2);
+}
+
+.home-scroll{
+ display: none;
+}
+
+.home-scroll-btn{
+    color: var(--first-color);
+    transition: .3s;
+}
+
+
+.home-scroll-arrow{
+    font-size: 1.25rem;
+}
+
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.btn-icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-25);
+    transition: .3s;
+}
+
+.btn-flex{
+    display: inline-flex;
+    align-items: center;
+}
