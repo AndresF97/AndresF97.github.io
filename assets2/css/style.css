@@ -2,8 +2,8 @@
 
 :root{
     --header-height:3rem;
-    --hue-color:250;
-    --first-color:hsl(var(--hue-color),69%,61%);
+    --hue-color:360;
+    --first-color:hsl(var(--hue-color),100%,61%);
     --first-color-second:hsl(var(--hue-color),69%,61%);
     --first-color-alt:hsl(var(--hue-color),57%,53%);
     --first-color-light:hsl(var(--hue-color),92%,85%);
@@ -22,7 +22,7 @@
     --h3-font-size: 1.125rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
-    --smaller-font-size: 75rem;
+    --smaller-font-size: .75rem;
 
 
     --font-medium:500;
@@ -302,3 +302,43 @@ nav{
     display: inline-flex;
     align-items: center;
 }
+
+.about-img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.about-description{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about-info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+
+.about-info-name{
+    font-size: var(--smaller-font-size);
+}
+
+.about-info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+}
+
+.about-info-title, .about-info-name{
+    display: block;
+    text-align: center;
+}
+
+.about-btn{
+    display: flex;
+    justify-content: center;
+}
+
+/* 45:25 */
