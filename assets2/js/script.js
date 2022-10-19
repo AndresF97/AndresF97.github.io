@@ -2,6 +2,9 @@ const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 const iconLink = document.querySelectorAll('.nav-link')
+const skillsContent = document.getElementsByClassName('skills-content');
+const skillsHeader = document.querySelectorAll('.skills-header');
+
 
 navToggle.addEventListener('click',()=>{
     navMenu.classList.add('show-menu')
@@ -18,9 +21,6 @@ function iconAction(){
 iconLink.forEach(link => link.addEventListener('click',iconAction))
 
 
-const skillsContent = document.getElementsByClassName('skills-content');
-const skillsHeader = document.querySelectorAll('.skills-header');
-
 function toggleSkills(){
     let itemClass = this.parentNode.className
    
@@ -35,4 +35,20 @@ function toggleSkills(){
 
 skillsHeader.forEach((el)=>{
     el.addEventListener('click',toggleSkills)
+})
+
+const tabs = document.querySelectorAll('[data-target]');
+const tabContent = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab=>{
+    tab.addEventListener('click',()=>{
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContent.forEach(tabCon=>{
+            tabCon.classList.remove('qualification-active')
+        })
+
+        target.classList.add('qualification-active')
+        tab.classList.add('qualification-active')
+    })
 })
