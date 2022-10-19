@@ -4,7 +4,8 @@ const navClose = document.getElementById('nav-close');
 const iconLink = document.querySelectorAll('.nav-link')
 const skillsContent = document.getElementsByClassName('skills-content');
 const skillsHeader = document.querySelectorAll('.skills-header');
-
+const tabs = document.querySelectorAll('[data-target]');
+const tabContent = document.querySelectorAll('[data-content]');
 
 navToggle.addEventListener('click',()=>{
     navMenu.classList.add('show-menu')
@@ -37,8 +38,6 @@ skillsHeader.forEach((el)=>{
     el.addEventListener('click',toggleSkills)
 })
 
-const tabs = document.querySelectorAll('[data-target]');
-const tabContent = document.querySelectorAll('[data-content]');
 
 tabs.forEach(tab=>{
     tab.addEventListener('click',()=>{
@@ -53,5 +52,28 @@ tabs.forEach(tab=>{
             tab.classList.remove('qualification-active')
         })
         tab.classList.add('qualification-active')
+    })
+})
+
+const modalShow = document.querySelectorAll('.services-modal');
+const modalBtns = document.querySelectorAll('.services-button');
+const modalClose = document.querySelectorAll('.services-modal-close');
+
+
+let modal = function(modalClick){
+    modalShow[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtn,i)=>{
+    modalBtn.addEventListener('click',()=>{
+        modal(i)
+    })
+})
+
+modalClose.forEach((close)=>{
+    close.addEventListener('click',()=>{
+        modalShow.forEach((modal)=>{
+            modal.classList.remove('active-modal')
+        })
     })
 })
