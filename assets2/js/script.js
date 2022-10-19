@@ -49,6 +49,9 @@ tabs.forEach(tab=>{
         })
 
         target.classList.add('qualification-active')
+        tabs.forEach(tab=>{
+            tab.classList.remove('qualification-active')
+        })
         tab.classList.add('qualification-active')
     })
 })

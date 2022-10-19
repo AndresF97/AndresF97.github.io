@@ -515,4 +515,8 @@ nav{
 .qualification-active[data-content]{
     display: block;
 }
+
+.qualification-button.qualification-active{
+    color: var(--first-color);
+}
 /* 59:10 */
