@@ -90,3 +90,25 @@ let swiper = new Swiper('.swiper-container',{
         clickable:true
     },
 })
+
+
+const section = document.querySelectorAll('section[id]');
+
+
+function scrollMovement(){
+    const scrollYAxis =  window.pageXOffset;
+    section.forEach(current=>{
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offStep - 50;
+        const sectionId = current.getAttribute('id')
+
+        if(scrollYAxis > sectionTop && scrollYAxis <= sectionTop + sectionHeight){
+            document.querySelector(`.nav-menu a[href*=${sectionId}]`).classList.add('active-link')
+        }else{
+            document.querySelector(`.nav-menu a[href*=${sectionId}]`).classList.remove('active-link')
+        }
+
+    })
+}
+
+window.addEventListener('scroll',scrollMovement)

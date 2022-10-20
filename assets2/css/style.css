@@ -156,6 +156,9 @@ nav{
     color: var(--first-color);
 }
 
+.active-link{
+    color: var(--first-color);
+}
 
 @media screen and (max-width:767px){
     .nav-menu{
@@ -678,4 +681,49 @@ nav{
 
 .swiper-pagination-bullet-active{
     background-color: var(--first-color) !important;
+}
+
+.footer{
+    padding-top: 2rem;
+}
+
+.footer-container{
+    row-gap: 3.5rem;
+}
+
+.footer-bg{
+    background-color: var(--first-color);
+    padding: 2rem 0 3rem;
+}
+
+.footer-title{
+    font-size: var(--h1-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.footer-subtitle{
+    font-size: var(--small-font-size);
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.footer-link:hover{
+    color: var(--first-color-light)
+}
+
+.footer-social{
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer-social:hover{
+    color: var(--first-color-alt);
+}
+
+.footer-title, .footer-subtitle, .footer-link,.footer-social{
+    color:var(--container-color)
 }
