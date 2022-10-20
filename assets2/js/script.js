@@ -6,6 +6,10 @@ const skillsContent = document.getElementsByClassName('skills-content');
 const skillsHeader = document.querySelectorAll('.skills-header');
 const tabs = document.querySelectorAll('[data-target]');
 const tabContent = document.querySelectorAll('[data-content]');
+const modalShow = document.querySelectorAll('.services-modal');
+const modalBtns = document.querySelectorAll('.services-button');
+const modalClose = document.querySelectorAll('.services-modal-close');
+
 
 navToggle.addEventListener('click',()=>{
     navMenu.classList.add('show-menu')
@@ -55,10 +59,6 @@ tabs.forEach(tab=>{
     })
 })
 
-const modalShow = document.querySelectorAll('.services-modal');
-const modalBtns = document.querySelectorAll('.services-button');
-const modalClose = document.querySelectorAll('.services-modal-close');
-
 
 let modal = function(modalClick){
     modalShow[modalClick].classList.add('active-modal')
@@ -76,4 +76,17 @@ modalClose.forEach((close)=>{
             modal.classList.remove('active-modal')
         })
     })
+})
+
+let swiper = new Swiper('.swiper-container',{
+    cssMode:true,
+    navigation:{
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev'
+    },
+    pagination:{
+        el:'.swiper-pagination'
+    },
+    mousewheel:true,
+    keyboard:true
 })

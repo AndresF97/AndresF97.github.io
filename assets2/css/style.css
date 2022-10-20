@@ -631,3 +631,29 @@ nav{
     visibility: visible;
 }
 
+.portfolio-container{
+    overflow: initial;
+}
+
+.portfolio-content{
+    padding: 0 1.5rem;
+}
+
+.portfolio-img{
+    width: 265px;
+    border-radius: .5rem;
+    justify-self: center;
+}
+
+.portfolio-title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
+
+.portfolio-description{
+    margin-bottom: var(--mb-0-75);
+}
+
+.portfolio-button:hover .button-icon{
+    transform: translateY(.25rem);
+}

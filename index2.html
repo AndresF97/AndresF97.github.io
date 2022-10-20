@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets2/css/style.css"/>
     <title>Web developer</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
@@ -474,10 +477,10 @@
         <h2 class="section-title">Portfolio</h2>
         <span class="section-subtitle">My Projects</span>
 
-        <div class="porfolio-container container">
-            <div>
-                <div class="portfolio-content grid">
-                    <img src="./assets2//img/GoogleB.gif" alt="" class="porfolio-img">
+        <div class="portfolio-container container swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="portfolio-content grid swiper-slide">
+                    <img src="./assets2//img/GoogleB.gif" alt="" class="portfolio-img">
                     <div class="portfolio-data">
                         <h3 class="portfolio-title">Google Book Search</h3>
                         <p class="portfolio-description">
@@ -490,7 +493,39 @@
                         </a>
                     </div>
                 </div>
+                <div class="portfolio-content grid swiper-slide">
+                    <img src="./assets2/img/MonopolyTracker.gif" alt="" class="portfolio-img">
+                    <div class="portfolio-data">
+                        <h3 class="portfolio-title">Monopoly-Tracker</h3>
+                        <p class="portfolio-description">
+                            Fullsatck Web application that you can save each users Monopoly game information. You can save multiple games 
+                            with different game pieces that represent each players in real life game pieces.
+                        </p>
+                        <a href="https://serene-badlands-41511.herokuapp.com/" target="_blank" class="button btn-flex button-small portfolio-button">
+                            Live Site
+                            <i class="uil uil-bolt button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio-content grid swiper-slide">
+                    <img src="./assets2//img/EpisodeDemo.gif" alt="" class="portfolio-img">
+                    <div class="portfolio-data">
+                        <h3 class="portfolio-title">Episode-List</h3>
+                        <p class="portfolio-description">
+                            Handlebars application that makes an API call to IMBD and gets the users show/movie; then saves that users seacrhed show/movie and make notes of the show there watching and keep track of the episode that there they are watching. 
+                            The users information is saved using MySQL and a hand made ORM.
+                        </p>
+                        <a href="https://rocky-chamber-81604.herokuapp.com/" target="_blank" class="button btn-flex button-small portfolio-button">
+                            Live Site
+                            <i class="uil uil-bolt button-icon"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
+            <br>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>  
         </div>
     </section>
 
@@ -500,8 +535,8 @@
 
 
 
-</main>
-
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./assets2/js/script.js"></script>
 </body>
 </html>
