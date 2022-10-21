@@ -10,7 +10,13 @@ const modalShow = document.querySelectorAll('.services-modal');
 const modalBtns = document.querySelectorAll('.services-button');
 const modalClose = document.querySelectorAll('.services-modal-close');
 const section = document.querySelectorAll('section[id]');
-
+const themeBtn = document.getElementById('bg-btn')
+const darkTheme = 'dark-theme';
+const iconTheme = 'uil-toggle-off'
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeBtn.classList.contains(iconTheme) ? 'uil-toggle-off' : 'uil-toggle-on';
 
 navToggle.addEventListener('click',()=>{
     navMenu.classList.add('show-menu')
@@ -112,14 +118,7 @@ function scrollMovement(){
 
 window.addEventListener('scroll',scrollMovement)
 
-const themeBtn = document.getElementById('bg-btn')
-const darkTheme = 'dark-theme';
-const iconTheme = 'uil-toggle-off'
-const selectedTheme = localStorage.getItem('selected-theme');
-const selectedIcon = localStorage.getItem('selected-icon');
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-const getCurrentIcon = () => themeBtn.classList.contains(iconTheme) ? 'uil-toggle-off' : 'uil-toggle-on';
 
 
 if(selectedTheme){

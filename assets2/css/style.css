@@ -751,3 +751,48 @@ nav{
 .footer-title, .footer-subtitle, .footer-link,.footer-social{
     color:white
 }
+
+@media screen and (max-width: 350px) {
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .nav-menu{
+        padding: 2rem .25rem 4rem;
+    }
+
+    .nav-list{
+        column-gap: 0;
+    }
+
+    .home-content{
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home-svg{
+        width: 180px;
+    }
+
+    .skills-title{
+        font-size: var(--normal-font-size);
+    }
+
+    .qualification-data{
+        gap:.5rem;
+    }
+
+    .services-container{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
+    .services-content{
+        padding-right: 3.5rem;
+    }
+
+    .services-modal{
+        padding: 0 .5rem;
+    }
+}
+
