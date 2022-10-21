@@ -9,6 +9,7 @@ const tabContent = document.querySelectorAll('[data-content]');
 const modalShow = document.querySelectorAll('.services-modal');
 const modalBtns = document.querySelectorAll('.services-button');
 const modalClose = document.querySelectorAll('.services-modal-close');
+const section = document.querySelectorAll('section[id]');
 
 
 navToggle.addEventListener('click',()=>{
@@ -92,8 +93,6 @@ let swiper = new Swiper('.swiper-container',{
 })
 
 
-const section = document.querySelectorAll('section[id]');
-
 
 function scrollMovement(){
     const scrollYAxis =  window.pageXOffset;
@@ -112,3 +111,25 @@ function scrollMovement(){
 }
 
 window.addEventListener('scroll',scrollMovement)
+
+const themeBtn = document.getElementById('bg-btn')
+const darkTheme = 'dark-theme';
+const iconTheme = 'uil-toggle-off'
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeBtn.classList.contains(iconTheme) ? 'uil-toggle-off' : 'uil-toggle-on';
+
+
+if(selectedTheme){
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeBtn.classList[selectedIcon === 'uil-toggle-off' ? 'add' : "remove"](iconTheme)
+}
+
+themeBtn.addEventListener('click',()=>{
+    document.body.classList.toggle(darkTheme)
+    themeBtn.classList.toggle(iconTheme)
+    localStorage.setItem('selected-theme',getCurrentTheme())
+    localStorage.setItem('selected-icon',getCurrentIcon)
+})
