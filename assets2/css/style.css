@@ -368,7 +368,7 @@ nav{
 }
 
 .about-info-title{
-    font-size: var(--h2-font-size);
+    font-size: 1rem;
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
 }
@@ -460,19 +460,25 @@ nav{
     width: 90%;
 }
 .skills-typescript{
-    width: 90%;
+    width: 50%;
+}
+.skills-react{
+    width: 80%;
 }
 .skills-mysql{
-    width: 90%;
+    width: 75%;
 }
 .skills-sequilize{
-    width: 90%;
+    width: 80%;
 }
 .skills-mogodb{
-    width: 90%;
+    width: 70%;
 }
 .skills-node{
     width: 90%;
+}
+.skills-graphql{
+    width: 50%;
 }
 .skills-react{
     width: 90%;
@@ -929,4 +935,32 @@ nav{
     }
 }
 
-/* 2:22:50 */
+/* 2:30:51 */
+
+@media screen and (max-width:1024px){
+    .header, .main, .footer-container{
+        padding: 0;
+    }
+    .home-svg{
+        width:320px;
+    }
+    .home-socials{
+        transform: translateX(-6rem);
+    }
+    .services-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .portfolio-content{
+        column-gap: 5rem;
+    }
+    .swiper-icon-arrow{
+        font-size: 3rem;
+    }
+    .swiper-button-prev{
+        left: -1.5rem;
+    }
+    .swiper-button-next{
+        right: 2rem;
+    }
+
+}
