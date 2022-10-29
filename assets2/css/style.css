@@ -433,7 +433,9 @@ nav{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
-
+.skills-number{
+    font-size: 30px;
+}
 .skills-bar, .skills-precentage{
     height: 5px;
     border-radius: .25rem;
@@ -446,42 +448,7 @@ nav{
 .skills-precentage{
     display: block;
     background-color: var(--first-color);
-}
-.skills-html{
-    width: 90%;
-}
-.skills-css{
-    width: 90%;
-}
-.skills-javascript{
-    width: 90%;
-}
-.skills-debugging{
-    width: 90%;
-}
-.skills-typescript{
-    width: 50%;
-}
-.skills-react{
-    width: 80%;
-}
-.skills-mysql{
-    width: 75%;
-}
-.skills-sequilize{
-    width: 80%;
-}
-.skills-mogodb{
-    width: 70%;
-}
-.skills-node{
-    width: 90%;
-}
-.skills-graphql{
-    width: 50%;
-}
-.skills-react{
-    width: 90%;
+    width: 100%;
 }
 
 .skills-close .skill-list{
